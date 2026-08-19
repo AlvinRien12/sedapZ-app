@@ -42,6 +42,9 @@ A modular React + TypeScript UI prototype for the SedapZ loyalty platform. Each 
 ## How to Run
 
 ```bash
+# Install pnpm (if not already installed)
+npm install -g pnpm
+
 # Install dependencies
 pnpm install
 
