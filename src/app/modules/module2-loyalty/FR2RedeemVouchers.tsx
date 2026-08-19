@@ -44,7 +44,7 @@ export function FR2RedeemVouchers() {
       name: "CR: FREE one (1) Hainanese Chicken Rice Meal",
       pts: 60,
       img: comboMeal,
-      tag: "DELIVERY",
+      tag: "IN-STORE USE ONLY",
       available: true,
     },
   ];
