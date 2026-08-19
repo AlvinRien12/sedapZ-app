@@ -40,16 +40,6 @@ export function FR3ScanQR() {
                 STAFF
               </span>
             </div>
-
-            <p
-              className="text-[9px] mt-1"
-              style={{
-                color: C.muted,
-                fontFamily: FONT.family,
-              }}
-            >
-              Bangsar Outlet
-            </p>
           </div>
 
           <div

@@ -14,7 +14,7 @@ import { CustomerNav } from "../../shared/CustomerNav";
 export function FR1ViewPoints() {
   const txns = [
     {
-      desc: "Dine-in · Bangsar Outlet",
+      desc: "Dine-in · The Chicken Rice Shop (IOI City Mall)",
       pts: "+150",
       date: "Today, 12:34 PM",
       positive: true,
@@ -26,7 +26,7 @@ export function FR1ViewPoints() {
       positive: false,
     },
     {
-      desc: "Dine-in · KLCC Outlet",
+      desc: "Dine-in · DubuYo (The Mines)",
       pts: "+200",
       date: "Mon, Aug 17",
       positive: true,

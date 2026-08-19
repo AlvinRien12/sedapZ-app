@@ -8,6 +8,10 @@ import { StatusBar } from "../../shared/StatusBar";
 import { Logo } from "../../shared/Logo";
 import { PillButton } from "../../shared/PillButton";
 import { CustomerNav } from "../../shared/CustomerNav";
+import chickenRice from "./images/hainanese_chicken_rice.webp";
+import spicyWings from "./images/korean_spicy_wings.webp";
+import rojak from "./images/penang_rojak.webp";
+import comboMeal from "./images/single_combo_meal.webp";
 
 export function FR2RedeemVouchers() {
   const [activeTab, setActiveTab] = useState("All");
@@ -16,30 +20,30 @@ export function FR2RedeemVouchers() {
 
   const vouchers = [
     {
-      name: "50% Off Char Kuey Teow",
+      name: "CR: FREE one (1) Single Combo Meal",
       pts: 80,
-      img: "https://images.unsplash.com/photo-1706128998697-456f55fb409d?w=400&h=300&fit=crop&auto=format",
-      tag: "IN-STORE",
+      img: chickenRice,
+      tag: "IN-STORE USE ONLY",
       available: true,
     },
     {
-      name: "Free Teh Tarik Ais",
+      name: "DY: Friday Specials - 50% Off Korean Spicy Wings",
       pts: 50,
-      img: "https://images.unsplash.com/photo-1781441234181-7a1f11b1a257?w=400&h=300&fit=crop&auto=format",
-      tag: "IN-STORE",
+      img: spicyWings,
+      tag: "IN-STORE USE ONLY",
       available: true,
     },
     {
-      name: "Nasi Lemak Set Free",
+      name: "CR: Tues Special - 50& off Penang Rojak (R)",
       pts: 120,
-      img: "https://images.unsplash.com/photo-1770966485209-e20d97337f1a?w=400&h=300&fit=crop&auto=format",
-      tag: "IN-STORE",
+      img: rojak,
+      tag: "IN-STORE USE ONLY",
       available: false,
     },
     {
-      name: "Satay 10pcs · 10% Off",
+      name: "CR: FREE one (1) Hainanese Chicken Rice Meal",
       pts: 60,
-      img: "https://images.unsplash.com/photo-1605582763781-dff23d0f5d32?w=400&h=300&fit=crop&auto=format",
+      img: comboMeal,
       tag: "DELIVERY",
       available: true,
     },
@@ -138,7 +142,7 @@ export function FR2RedeemVouchers() {
               {vouchers.map((voucher, i) => (
                 <div
                   key={i}
-                  className="overflow-hidden rounded-[16px]"
+                  className="overflow-hidden rounded-[16px] flex flex-col"
                   style={{
                     background: C.surface,
                     border: `1px solid ${C.border}`,
@@ -175,19 +179,19 @@ export function FR2RedeemVouchers() {
                     </span>
                   </div>
 
-                  <div className="p-2.5">
-                    <p
-                      className="text-[9px] font-bold leading-tight"
-                      style={{
-                        color: C.text,
-                        fontFamily: FONT.family,
-                        minHeight: 24,
-                      }}
-                    >
-                      {voucher.name}
-                    </p>
+                   <div className="p-2.5 flex flex-col flex-1">
+                     <p
+                       className="text-[9px] font-bold leading-tight line-clamp-2"
+                       style={{
+                         color: C.text,
+                         fontFamily: FONT.family,
+                         minHeight: 24,
+                       }}
+                     >
+                       {voucher.name}
+                     </p>
 
-                    <div className="flex items-center justify-between mt-2">
+                     <div className="flex items-center justify-between mt-auto pt-2">
                       <span
                         className="text-[11px] font-extrabold"
                         style={{
